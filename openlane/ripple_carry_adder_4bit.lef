@@ -1,0 +1,236 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ripple_carry_adder_4bit
+  CLASS BLOCK ;
+  FOREIGN ripple_carry_adder_4bit ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 41.365 BY 52.085 ;
+  PIN A[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 0.000 13.250 4.000 ;
+    END
+  END A[0]
+  PIN A[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.365 37.440 41.365 38.040 ;
+    END
+  END A[1]
+  PIN A[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 0.000 39.010 4.000 ;
+    END
+  END A[2]
+  PIN A[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 13.640 4.000 14.240 ;
+    END
+  END A[3]
+  PIN B[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END B[0]
+  PIN B[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END B[1]
+  PIN B[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 48.085 26.130 52.085 ;
+    END
+  END B[2]
+  PIN B[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.365 10.240 41.365 10.840 ;
+    END
+  END B[3]
+  PIN Cin
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 48.085 13.250 52.085 ;
+    END
+  END Cin
+  PIN Cout
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 48.085 39.010 52.085 ;
+    END
+  END Cout
+  PIN Sum[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 0.000 26.130 4.000 ;
+    END
+  END Sum[0]
+  PIN Sum[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 40.840 4.000 41.440 ;
+    END
+  END Sum[1]
+  PIN Sum[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 48.085 0.370 52.085 ;
+    END
+  END Sum[2]
+  PIN Sum[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.365 23.840 41.365 24.440 ;
+    END
+  END Sum[3]
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 11.755 10.640 13.355 41.140 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 19.230 10.640 20.830 41.140 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 26.705 10.640 28.305 41.140 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 34.180 10.640 35.780 41.140 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 17.115 35.780 18.715 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 24.590 35.780 26.190 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 32.065 35.780 33.665 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 39.540 35.780 41.140 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 8.455 10.640 10.055 41.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 15.930 10.640 17.530 41.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 23.405 10.640 25.005 41.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 30.880 10.640 32.480 41.040 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 13.815 35.660 15.415 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 21.290 35.660 22.890 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 28.765 35.660 30.365 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 36.240 35.660 37.840 ;
+    END
+  END VPWR
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 35.420 40.885 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 39.030 41.040 ;
+      LAYER met2 ;
+        RECT 0.650 47.805 12.690 48.085 ;
+        RECT 13.530 47.805 25.570 48.085 ;
+        RECT 26.410 47.805 38.450 48.085 ;
+        RECT 0.100 4.280 39.000 47.805 ;
+        RECT 0.650 4.000 12.690 4.280 ;
+        RECT 13.530 4.000 25.570 4.280 ;
+        RECT 26.410 4.000 38.450 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 40.440 37.365 41.305 ;
+        RECT 4.000 38.440 37.365 40.440 ;
+        RECT 4.000 37.040 36.965 38.440 ;
+        RECT 4.000 28.240 37.365 37.040 ;
+        RECT 4.400 26.840 37.365 28.240 ;
+        RECT 4.000 24.840 37.365 26.840 ;
+        RECT 4.000 23.440 36.965 24.840 ;
+        RECT 4.000 14.640 37.365 23.440 ;
+        RECT 4.400 13.240 37.365 14.640 ;
+        RECT 4.000 11.240 37.365 13.240 ;
+        RECT 4.000 10.375 36.965 11.240 ;
+  END
+END ripple_carry_adder_4bit
+END LIBRARY
+
